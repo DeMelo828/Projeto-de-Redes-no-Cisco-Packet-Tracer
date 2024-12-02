@@ -1,0 +1,9 @@
+Switch 1 filial
+
+ena
+conf t
+enable password cisco
+hostname Vitor
+
+int range f0/1-2
+channel-group 1 mode auto

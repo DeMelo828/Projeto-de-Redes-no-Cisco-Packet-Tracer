@@ -1,0 +1,7 @@
+ena
+conf t
+enable password cisco
+hostname Vitor
+
+int range f0/3-4
+channel-group 2 mode auto

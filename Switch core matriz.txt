@@ -1,0 +1,17 @@
+ena
+conf t
+hostname Vitor_Core_Matriz
+enable secret cisco
+int range g1/0/1 - 2
+channel-group 1 mode desirable
+int range g1/0/3 - 4
+channel-group 2 mode desirable
+vlan 10
+name LAN_MATRIZ
+interface vlan 10
+ip address 172.40.0.1 255.255.248.0
+ip helper-address 172.40.0.2
+standby version 2
+standby 1 ip 172.40.0.1
+standby 1 priority 150
+standby 1 preempt

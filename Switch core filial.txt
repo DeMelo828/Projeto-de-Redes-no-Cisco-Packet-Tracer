@@ -1,0 +1,12 @@
+ena
+conf t
+enable password cisco
+hostname Vitor
+
+interface range g1/0/1-2
+channel-group 1 mode desirable
+
+exit
+
+interface range g1/0/3-4
+channel-group 2 mode desirable

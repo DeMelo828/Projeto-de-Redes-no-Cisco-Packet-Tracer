@@ -1,0 +1,36 @@
+Router 2
+
+ena
+conf t
+hostname Vitor
+enable password cisco
+
+int g0/0
+ip address 172.40.0.3 255.255.248.0
+no shut
+standby version 2
+standby ip 172.40.0.1
+standby 1 priority 150
+standby 1 preempt
+
+int s0/3/1
+ip address 210.210.230.5 255.255.255.252
+no shut
+
+username FIAP secret provafinal 
+ip domain name fiap.com.br 
+crypto key generate rsa
+2048
+ip ssh time-out 60
+ip ssh authentication-retries 4
+ip ssh version 2 
+line vty 0 1 
+login local
+transport input ssh
+
+exit
+conf t
+router eigrp 268
+network 172.40.0.0 0.0.7.255 
+network 210.210.230.0  0.0.0.3 
+no auto-summary

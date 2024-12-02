@@ -1,0 +1,25 @@
+Router cliente
+
+ena
+conf t
+hostname Vitor
+enable password cisco
+
+int g0/0
+ip address 100.100.100.1 255.255.255.0
+ip nat inside
+no shut
+
+int s0/3/1
+ip address 210.210.230.21 255.255.252.21
+ip nat outside
+clock rate 64000 
+no shut
+
+exit
+conf t
+router eigrp 268
+network 210.210.230.0 0.0.0.3
+no auto-summary
+
+ip nat inside source static 100.100.100.2 210.210.230.21
