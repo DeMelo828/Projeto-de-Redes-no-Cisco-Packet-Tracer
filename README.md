@@ -1,5 +1,8 @@
 # Projeto-de-Redes-no-Cisco-Packet-Tracer
 ---
+
+## !!! O PROJETO ESTÁ 90% COMPLETO !!!
+
 ## • Criação de Plano de endereçamento 
 • Criação de Servidor de DHCP 
 • Implementação de Protocolo de Roteamento 
