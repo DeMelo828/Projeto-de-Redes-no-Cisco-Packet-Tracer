@@ -5,9 +5,13 @@
 
 ## • Criação de Plano de endereçamento 
 • Criação de Servidor de DHCP 
+
 • Implementação de Protocolo de Roteamento 
+
 • Configuração de protocolo de redundância HSRP 
+
 • Configuração de tecnologia de agregação de Link 
+
 • Utilização da ferramenta de Tradução NAT
 
 ## O cenário atual é composto por 03 prédios: 
