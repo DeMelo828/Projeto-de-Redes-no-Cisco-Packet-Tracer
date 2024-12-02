@@ -1,8 +1,5 @@
 # Projeto-de-Redes-no-Cisco-Packet-Tracer
 ---
-
-## !!! O PROJETO ESTÁ 90% COMPLETO !!!
-
 ## • Criação de Plano de endereçamento 
 • Criação de Servidor de DHCP 
 
@@ -19,5 +16,8 @@
 • Filial 900 IPS 
 • Cliente 200 IPS (Range 100.100.100.0/24)
 
+![image](https://github.com/user-attachments/assets/4fb5bddf-933b-405d-810f-60fe3757a4f5)
 
-![{43222CE0-9802-4FF4-8090-B5FADE1260F3}](https://github.com/user-attachments/assets/f94e4406-edcc-431d-b242-39d3086ee920)
+*O projeto foi utilizado como prova final na materia de Networking Security*
+
+
